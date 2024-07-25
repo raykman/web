@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ray Kman: Hardware1</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i&subset=cyrillic" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex">
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.html"><span>Ray Kman</span></a></h1>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li class="drop-down"><a href="">Projects</a>
+            <ul>
+              <li><a href="hardware1.html">Temperature Sensing Microcontroller</a></li>
+              <li><a href="hardware2.html">Four Function Clock</a></li>
+              <li><a href="code1.html">Corn Futures Trade Viability Program</a></li>
+              <li><a href="design1.html">Brushless DC Electric Motor</a></li>
+              <li><a href="design2.html">Hyrdocats</a></li>
+              <li><a href="design3.html">Solarcats</a></li>
+              <li><a href="code2.html">Verilog (In Progress)</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- .nav-menu -->
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <main id="main">
+
+     <!-- Project Description -->
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>Temperature Sensing Microcontroller </h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <p>A complete embedded system was constructed that functioned as a thermostat controller with an output display.</p>
+            <p><b>Components</b></p>
+            <ul>
+            <li>PIC24 microcontroller</li>
+            <li>DS1631 temperature sensor</li>
+            <li>Two pushbutton switches</li>
+            <li>RGB LED</li>
+            <li>Serial Interface</li>
+            </ul>
+            <p><b>Functionality</b></p>
+            <ul>
+            <li>The DS1631 sensed air temperate and the PIC24 determined if heating or cooling
+was needed to keep the air temperature within a user settable range. If cooling was needed (i.e. temperature above the high set point) the LED turned blue, if heating was needed (i.e.
+temperature below the low set point) the LED turned red, and if the temperature was
+within the set range the LED turned green.</li>
+            <li>When not being used to set the range, the LCD provided the system state information.</li>
+            <li>The pushbuttons and LCD panel were used to allow a user to input high and low
+temperature set points. For example, pressing both buttons entered programing mode, first set low set
+point using one button as up and one button as down. Pressing both buttons again moved to setting the
+high set point. A third double press exited programming mode and returned the LCD to displaying the state information.</li>
+            <li>The serial port logged all system events.</li>
+          </ul>
+          <a href="https://github.com/rkman1/EE30321-Final-Project">Repository</a>
+          </div>
+
+          <div class="col-lg-6">
+            <video width="700" height="450" controls>
+                <source src="assets/img/EE30321.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Project Description -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <div class="contact-about">
+              <h3>Ray Kman</h3>
+              <p>An engineering student who loves to poke around with electronics and learn as much as he can. Always seeking to push boundaries.</p>
+              <p>CONTACT: rkman@nd.edu </p>
+              <div class="social-links">
+                <a href="https://github.com/rkman1"><i class="icofont-github"></i></a>
+                <a href="https://www.linkedin.com/in/raykman/"><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+  </main>
+  <!-- End main -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
